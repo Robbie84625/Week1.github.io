@@ -1,0 +1,139 @@
+body
+{
+    padding: 0px; margin: 0px;
+}
+.frame
+{
+    display: flex;/*讓下一層次項目水平排列*/
+}
+.left
+{
+    flex:none;/*固定配置，參考寬度*/ font-weight: 20px; justify-content:flex-start; padding: 10px; display: flex; align-items: center; text-align: center;
+}
+.right
+{
+    display: flex;/*讓下一層次項目水平排列*/ flex:auto; justify-content: flex-end; padding: 10px;
+}
+.item
+{
+    font-weight: 20px; margin-right: 10px; text-align: center; align-items: center;
+}
+.icon{
+    display: none; align-items: center;
+}
+.welcome
+{
+    padding: 0px; border: 0px; height: 250px; background-color: #ADD8E6; font-size: 2em;
+    
+    /*完美置中*/
+    display: flex; justify-content: center; align-items: center;
+}
+.sheet
+{
+    display: flex; flex-wrap: wrap; width: 1200px; margin-left: auto; margin-right: auto;
+}
+#three_1
+{
+    background-color:  #ADD8E6;  width: calc((100% - 40px) / 3); margin-right: 20px; display: flex; align-items: center; margin-top: 20px;
+}
+#three_2
+{
+    background-color:  #ADD8E6; width: calc((100% - 40px) / 3); margin-right: 20px; display: flex; align-items: center; margin-top: 20px;
+}
+#three_3
+{
+    background-color:  #ADD8E6;  width: calc((100% - 40px) / 3); display: flex; align-items: center; margin-top: 20px;
+}
+#three_img
+{
+    width:80px; height: 50px; margin-right: 20px;
+}
+#sixteen_img{
+    width: calc((100% - 100px) / 6); margin-top: 20px; margin-right: 20px;
+}
+#add_margin{
+    width: calc((100% - 100px) / 6); margin-top: 20px; margin-right: 0px;
+}
+#remove_margin{
+    width: calc((100% - 100px) / 6); margin-top: 20px; margin-right: 20px;
+}
+#sixteen_img_other{
+    width: calc((100% - 100px)/ 6); margin-top: 20px; margin-right: 0px;
+}
+#text{
+    text-align: center; font-weight: 20px; padding: 10px;
+}
+.img{
+    width: 100%;height:auto;object-fit: cover;
+}
+
+
+@media(max-width:1200px){
+    .sheet{
+        width: 90%;
+    }
+    #three_1{
+        width: calc((100% - 20px) / 2);
+    }
+    #three_2{
+        width: calc((100% - 20px) / 2);
+        margin-right: 0px;
+    }
+    #three_3{
+        width: 100%;
+    }
+    #sixteen_img{
+        width: calc((100% - 60px) / 4); margin-top: 20px; margin-right: 20px;
+    }
+    #remove_margin{
+        width: calc((100% - 60px) / 4);
+        margin-right: 0px;
+    }
+    #add_margin{
+        width: calc((100% - 60px) / 4);
+        margin-right: 20px;
+    }
+    #sixteen_img_other{
+        width: calc((100% - 60px) / 4);
+    }
+}
+
+@media(max-width:600px){
+    .item{
+        display: none;
+    }
+    .icon{
+        display: block;
+    }
+    .sheet{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #three_1{
+        margin-right: 0px;
+        width: 100%;
+    }
+    #three_2{
+        width: 100%;
+    }
+    #three_3{
+        width: 100%;
+    }
+    #sixteen_img{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #remove_margin{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #add_margin{
+        width: 100%;
+        margin-right: 0px;
+    }
+    #sixteen_img_other{
+        width: 100%;
+    }
+
+}
